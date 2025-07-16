@@ -13,3 +13,5 @@ The endpoints will be for the following:
 I will write the data to variables or objects. I will not use an official database yet until it's time for my discord clone project.
 
 BONUS: I will also have a front end call to the back end to have a mini full stack application!
+
+(To run application you must make sure the spring boot server is running. Go to ) com.example.demo.DemoApplication.Java, and press run in visual studio. Then you can open any of the html files and it should connect. You must have java installed on your computer.

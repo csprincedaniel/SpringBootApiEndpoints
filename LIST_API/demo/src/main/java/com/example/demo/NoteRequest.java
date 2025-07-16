@@ -13,7 +13,7 @@ public class NoteRequest {
         this.id = id;
     }
 
-    public String getTask() {
+    public String getTask(){
         return task;
     }
 
