@@ -2,6 +2,8 @@ let test = document.querySelector("#test")
 let note = document.querySelector("#note")
 let test2 = document.querySelector("#test2")
 let test3 = document.querySelector("#test3")
+let test4 = document.querySelector("#test4")
+let test5 = document.querySelector("#test5")
 let count = 0
 
 test.addEventListener('click', async function(){
@@ -58,4 +60,17 @@ test4.addEventListener('click', async function(){
     let ans = await response.json()
     alert(`ID: ${ans.id}, Task: ${ans.task}, Done: ${ans.done}`);
 
+})
+
+
+test5.addEventListener("click", async function(){
+    let iddelete = document.querySelector("#iddelete")
+
+    let response = await fetch(`http://localhost:8080/todos/${iddelete.value}`, {
+        method: "DELETE",
+    })
+
+    let ans = await response.text()
+    alert("Made request to delete");
+    alert(ans);
 })

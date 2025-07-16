@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -52,4 +53,15 @@ public class RequestController {
         return ResponseEntity.notFound().build();
     }
 
+    @CrossOrigin(origins="*")
+    @DeleteMapping("todos/{id}")
+    public ResponseEntity<String> deletetodo(@PathVariable int id){
+        for (NoteRequest note: todos){
+            if (note.getId() == id){
+                todos.remove(note);
+                return ResponseEntity.ok("Succesfully deleted the id" + id);
+            } 
+        }
+        return ResponseEntity.notFound().build();
+    }
 }
