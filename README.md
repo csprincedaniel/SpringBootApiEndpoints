@@ -1,5 +1,9 @@
 For the sake of getting a lot of practice with Java Spring boot and backend web development, I am going to create a lot of api endpoints.
 
+SO FAR WE COMPLETED [TO DO LIST / NOTES API, ]
+
+UP NEXT: PUBLIC HOLIDAY API
+
 The endpoints will be for the following:
 
 1. to do list api,
@@ -9,6 +13,26 @@ The endpoints will be for the following:
 5. book library api,
 6. weather fetch proxy,
 7. basic chat api,
+
+
+We can even do:
+1. Daily Motivation API
+Returns a random quote, short video, or image.
+Optional: filter by category or author.
+
+2. Timezone Conversion API
+Input: location or timestamp.
+Output: converted time in another zone.
+
+3. Public Holidays API
+Input: country code.
+Output: list of upcoming holidays.
+
+4. Simple Weather API Proxy
+Wrap an external API (like OpenWeather) with simplified output.
+Cache responses to reduce external calls.
+
+
 
 I will write the data to variables or objects. I will not use an official database yet until it's time for my discord clone project.
 
